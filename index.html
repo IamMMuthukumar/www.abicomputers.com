@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="device-width, initial-scale=1.0">
+<title>Abi Computers - No.1 Computer | Laptop | CCTV | Printer Sales & Service Tirupattur</title>
+<link rel="icon" href="images/logo/it_logo.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+<link 
+	rel="stylesheet" 
+	href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+	integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+	crossorigin="anonymous"/>
+</head>
+<body>
+
+
+<!-----Header------>
+
+<marquee class="header_top">                    
+	<ul class="list-inline">
+				  <li> <i class="fa  fa-home"></i> <b>No:25/E Anbu Complex(1st floor),Vaniyan Kovil Street, Thirupattur-630211.</b></li>
+				  <li> <i class="fa fa-envelope"></i> <b>abicomputerstpr@gmail.com</b></li>
+				  <li> <a href="tel:+919585738135"><i class="fa fa-phone"></i><b>+91 9585738135</b></a></li>
+				</ul>
+</marquee>
+		  <section class="header">
+			<nav>
+			  <a href="index.html"><img src="images/logo/it_logo.png"></a>
+				  <div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+				  <li><a href="#home">HOME</a></li>
+				  <li><a href="#about">ABOUT</a></li>
+				  <li><a href="#products">PRODUCTS</a></li>
+				  <li><a href="#services">SERVICES</a></li> 
+				  <li><a href="#contact">CONTACT</a></li>
+				</ul>
+			  </div>
+			  <i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+			<script>
+			  var navLinks = document.getElementById("navLinks");
+		  
+		  function showMenu(){
+			navLinks.style.right = "0";
+			}
+			function hideMenu(){
+			  navLinks.style.right = "-200px";
+			}
+		  
+			</script>
+
+  <!-------slide-->
+<section class="slider" id="home">  
+	<div class="Slider">
+	<div class="myslider fade" style="display: block;">
+		<div class="txt">
+		<h1>Abi Computers</h1><p>welcome to shop</p>
+		</div>	
+		<img src="images/slider/1.jpg" style="width:100%; height:100%;">
+	</div>
+	<div class="myslider fade">
+	<div class="txt">
+	<h1>Computer Sales & Services</h1><p>welcome to shop</p>
+	</div>
+	<img src="images/slider/2.jpg" style="width:100%; height:100%;">
+	</div>
+	<div class="myslider fade">
+	<div class="txt">
+	<h1>Printer Sales & Services</h1><p>welcome to shop</p>
+	</div>
+	<img src="images/slider/3.jpg" style="width:100%; height:100%;">
+	</div>
+	<div class="myslider fade">
+	<div class="txt">
+	<h1>Laptop Sales & Services</h1><p>welcome to shop</p>
+	</div>
+	<img src="images/slider/4.jpg" style="width:100%; height:100%;">
+	</div>
+	<div class="myslider fade">
+	<div class="txt">
+	<h1>CCTV Installation & Services</h1><p>welcome to shop</p>
+	</div>
+	<img src="images/slider/5.jpg" style="width:100%; height:100%;">
+	</div>
+	<a class="prev" onclick="plusslides(-1)">&#10094;</a>
+	<a class="next" onclick="plusslides(1)">&#10095;</a>
+	<div class="dotsbox" style="text-align: center;">
+	<span class="dot" onclick="currentslide(1)"></span>
+	<span class="dot" onclick="currentslide(2)"></span>
+	<span class="dot" onclick="currentslide(3)"></span>
+	<span class="dot" onclick="currentslide(4)"></span>
+	<span class="dot" onclick="currentslide(5)"></span>
+	</div>
+	</div>
+</section>
+<script>
+  const myslide=document.querySelectorAll('.myslider'),
+  dot=document.querySelectorAll('.dot');
+
+  let counter=1;
+  slidefun(counter);
+let timer=setInterval(autoslide,4000);
+function autoslide(){
+  counter +=1;
+  slidefun(counter);
+}
+function plusslides(n){
+  counter +=n;
+  slidefun(counter);
+  resetTimer();
+}
+function currentslide(n){
+  counter =n;
+  slidefun(counter);
+  resetTimer();
+}
+function resetTimer(){
+  clearInterval(timer);
+  timer=setInterval(autoslide,4000);
+}
+
+  function slidefun(n){
+ let i;
+ for(i=0;i<myslide.length;i++){
+  myslide[i].style.display="none";
+ }
+ for(i=0;i<dot.length;i++){
+  dot[i].classList.remove('active');
+ }
+ if(n>myslide.length){
+  counter=1;
+ }
+if(n<1)
+{
+  counter=myslide.length;
+}
+myslide[counter-1].style.display="block";
+dot[counter-1].classList.add('active');  
+}	
+	</script>
+
+<!---------intro------------->
+<section class="intro" id="about">
+    <h1>About</h1>
+    <div class="row">
+        <div class="intro-col">
+            <p><b>Abi Computers</b> is a leading retailer committed to becoming the most loved and trusted store for all electronic devices with a focus on computer components ,Printer, CCTV, Networking Products by providing a great shopping experience, rapid delivery, tech customer service and provide the best warranty support. The best online platform for Wholesale Computer ,Laptop ,CCTV, Printer Accessories where you find one and all gadgets required for the operation and performance of your computers and laptops. Abi Computers Specialized computer Service technicians at computer services deal with hardware and software issues pertaining to desktops, laptops,printer,servers etc..</p>
+			<ul>
+				<li><i class="fa fa-check-circle"></i>Canon & Epson Ink Seller </li>
+				<li><i class="fa fa-check-circle"></i>10 yeares experiance in sales & Service field</li>
+				<li><i class="fa fa-check-circle"></i>Best Service & Best Quality</li>
+				 <li><i class="fa fa-check-circle"></i>Hikvision, Dahua CCTV Camera sales & Service</li>
+			</ul>
+        </div>    
+        <div class="intro-col">
+            <img src="images/about/1.jpg">
+        </div>
+    </div>
+	
+</section>
+
+<!-------products------->
+<section id="products">
+	<div class="container1">
+		<h1>Our Products</h1>
+		<p>We package the products with best services to make you a happy customer.</p>
+	<div class="row">
+		<div class="products-col">
+			<img src="images/product/1.png">
+			<h3>Canon Color Printers</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20I%20need%20Canon%20Color%20Printer"class="btn">Order Now</a>
+		</div>
+		<div class="products-col">
+			<img src="images/product/2.jpg">
+			<h3>Hard disk</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20I%20need%20Harddisk" class="btn">Order Now</a>
+		</div>
+		<div class="products-col">
+			<img src="images/product/3.jpg">
+			<h3>Epson Color Printers</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20I%20need%20Epson%20Color%20Printer" class="btn">Order Now</a>
+		</div>
+		<div class="products-col">
+			<img src="images/product/4.png">
+			<h3>Canon Color ink</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20I%20need%20Epson%20Color%20Ink" class="btn">Order Now</a>
+		</div>
+		<div class="products-col">
+			<img src="images/product/5.jfif">
+			<h3>Epson Color ink</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20I%20Epson%20Color%20Ink" class="btn">Order Now</a>
+		</div>
+		<div class="products-col">
+			<img src="images/product/6.jpg">
+			<h3>New Toner & Cartridge</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20I%20need%20New%2012a%20Toner" class="btn">Order Now</a>
+		</div>
+		<div class="products-col">
+			<img src="images/product/7.jpg">
+			 <h3>Anti-Virus</h3>
+			 <a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20we%20need%20help%20regarding%20something" class="btn">Order Now</a>
+		</div>
+		<div class="products-col">
+			<img src="images/product/8.jpg">
+			<h3>Dahua Camera</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20we%20need%20help%20regarding%20something" class="btn">Order Now</a>
+		</div>
+		<div class="products-col">
+			<img src="images/product/9.jpg">
+		   <h3>Hikvision Camera</h3>
+		   <a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20we%20need%20help%20regarding%20something" class="btn">Order Now</a>
+		</div>
+		<div class="products-col">
+			<img src="images/product/10.jpg">
+			<h3>Laptop Accessories</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20we%20need%20help%20regarding%20something" class="btn">Order Now</a>
+		</div>
+		<div class="products-col">
+			<img src="images/product/11.jpg">
+			<h3>Gaming PC</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20we%20need%20help%20regarding%20something" class="btn">Order Now</a>
+		</div>
+		<div class="products-col">
+			<img src="images/product/12.png">
+			<h3>New Brand Laptop</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20we%20need%20help%20regarding%20something" class="btn">Order Now</a>
+		</div>
+	
+	</div>
+	</div>
+	</section>
+
+<!-------services------>
+<section id="services">
+	<div class="services">
+	<h1> Our Services</h1>
+	<p>We Best services to make you a happy customer.</p>
+	
+	<div class="container">
+		<div class="box">
+			<img src="images/service/1.png" style="width:100%; height:70%;">
+			<h3>CCTV Install & Configuration</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20I%20need%20a%20New%20CCTV%20Installation" class="btn">Book Service</a>
+		</div>
+		<div class="box">
+			<img src="images/service/2.jpg" style="width:100%; height:70%;">
+			<h3>Laptop Service</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20I%20need%20a%20Laptop%20service" class="btn">Book Service</a>
+		</div>
+		<div class="box">
+			<img src="images/service/3.png" style="width:100%; height:70%;">
+			<h3>Printer Service & Installation</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20I%20need%20a%20Printer%20Service" class="btn">Book Service</a>
+		</div>
+		<div class="box">
+			<img src="images/service/4.jpg" style="width:100%; height:70%;">
+			<h3>Computer Service</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20I%20need%20a%20Computer%20Service" class="btn">Book Service</a>
+		</div>
+		<div class="box">
+			<img src="images/service/5.jpg" style="width:100%; height:70%;">
+			<h3>Data recovery</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20we%20need%20a%20Data%20Recovery%20service" class="btn">Book Service</a>
+		</div>
+		<div class="box">
+			<img src="images/service/6.jpg" style="width:100%; height:70%;">
+			<h3>Tonner & Cartridge Refill</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20I%20need%20a%20Tonner%20&%20cartridge%20refill%20service" class="btn">Book Service</a>
+		</div>
+		<div class="box">
+			<img src="images/service/7.png" style="width:100%; height:70%;">
+			<h3>Network solutions</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20I%20need%20a%20Network%20solution%20service" class="btn">Book Service</a>
+		</div>
+		<div class="box">
+			<img src="images/service/8.jpg" style="width:100%; height:70%;">
+			<h3>Motherboard Chip Level Service</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20I%20need%20a%20motherboard%20chip%20level%20service" class="btn">Book Service</a>
+		</div>
+		<div class="box">
+			<img src="images/service/9.jpg" style="width:100%; height:70%;">
+			<h3>Biometric Configuration</h3>
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=919585738135&text=Hi%20I%20need%20a%20Biometric%20configuration%20service" class="btn">Book Service</a>
+		</div>
+	</div>
+</div> 
+
+</section>
+<!------feedback------->
+<section div class="testimonials">
+	<div class="testimonial-heading">
+		<span> Comments </span>
+		<h1>Customer Feedback</h1>
+	</div>
+
+	<div class="testimonial-box-container">
+		<div class="testimonial-box">
+			<div class="box-top">
+				<div class="profile">
+					<div class="profile-img">
+						<img src="images/comment/client1.jpg">
+					</div>
+					<div class="name-user">
+						<strong>Sabari</strong>
+						<span>@sabari123</span>
+					</div>
+				</div>
+				<div class="reviews">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+				</div>
+			</div>
+			<div class="client-comment">
+				<p>You guys rock! Thank you for making it painless, pleasant and most of all hassle free! I wish I would have thought of it first. I am really satisfied with my first laptop service.</p>
+			</div>
+		</div>
+
+		<div class="testimonial-box">
+			<div class="box-top">
+				<div class="profile">
+					<div class="profile-img">
+						<img src="images/comment/client2.jpg">
+					</div>
+					<div class="name-user">
+						<strong>Guru</strong>
+						<span>@guru123</span>
+					</div>
+				</div>
+				<div class="reviews">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+			</div>
+			<div class="client-comment">
+				<p>You guys rock! Thank you for making it painless, pleasant and most of all hassle free! I wish I would have thought of it first. I am really satisfied with my first laptop service.</p>
+			</div>
+		</div>
+
+		<div class="testimonial-box">
+			<div class="box-top">
+				<div class="profile">
+					<div class="profile-img">
+						<img src="images/comment/client3.jpg">
+					</div>
+					<div class="name-user">
+						<strong>sivashankar</strong>
+						<span>@sivashankar123</span>
+					</div>
+				</div>
+				<div class="reviews">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+			</div>
+			<div class="client-comment">
+				<p>You guys rock! Thank you for making it painless, pleasant and most of all hassle free! I wish I would have thought of it first. I am really satisfied with my first laptop service.</p>
+			</div>
+		</div>
+
+		<div class="testimonial-box">
+			<div class="box-top">
+				<div class="profile">
+					<div class="profile-img">
+						<img src="images/comment/client4.jpg">
+					</div>
+					<div class="name-user">
+						<strong>Mk</strong>
+						<span>@mk123</span>
+					</div>
+				</div>
+				<div class="reviews">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+			</div>
+			<div class="client-comment">
+				<p>You guys rock! Thank you for making it painless, pleasant and most of all hassle free! I wish I would have thought of it first. I am really satisfied with my first laptop service.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!------contact---->
+<section id="contact">
+	<div class="contact">
+	  <h1>Contact Us</h1>
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15711.38964948037!2d78.5991699!3d10.1115734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ca8712bf746d2c6!2sABI%20COMPUTERS!5e0!3m2!1sen!2sin!4v1673613099417!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+	  </iframe>
+  </div>
+  </section>
+  <section class="contact-us">
+
+	<div class="row">
+		<div class="contact-col">
+			<div>
+				<i class="fa fa-home"></i>
+				<span>
+					<h5>NO.25, Anbu Complex,Vaniyan Kovil Street</h5>
+					<p>Tiruppattur-630211.</p>
+				</span>
+			</div>
+
+			<div>
+				<a href="tel:+919585738135"><i class="fa fa-phone"></i></a>
+				<span>
+					<h5>+91 9585738135</h5>
+					<p>Monday to Saturday, 9.30AM to 8.30PM</p>
+				</span>
+			</div>
+
+			<div>
+				<i class="fa fa-envelope"></i>
+				<span>
+					<h5>abicomputerstpr@gmail.com</h5>
+					<p>Email Us your query</p>
+				</span>
+			</div>
+
+		</div>
+		<div class="contact-col">
+			
+			<form action="https://api.web3forms.com/submit" method="POST">
+
+				<input type="hidden" name="access_key" value="57fa456a-8dd8-4298-a701-3625a4b5a7f6">
+				<input type="text" name="name" placeholder="Enter your name" class="contact-inputs" required>
+				<input type="email" name="email" placeholder="Enter email address" class="contact-inputs" required>
+				<input type="tel" name="phone" placeholder="Enter your phone no." class="contact-inputs" pattern="[0-9]{10}" required>
+				<textarea name="message" placeholder="Message" class="contact-inputs" required ></textarea>
+				<button type="submit" class="btn">Send Message</button>
+			</form>
+	
+		</div>
+	</div>
+</section>
+
+<!------footer------->
+<footer id="footer">
+	<div class="footer-center">
+		<h3>Abi <span>Computers</span></h3>
+		<!-----Social Icon-->
+		<div class="social-links">
+			<a href="https://www.facebook.com/abicomputerstpr" target="_blank"><i class="fab fa-facebook"></i></a>
+			<a href="https://instagram.com/abicomputerstpr" target="_blank"><i class="fab fa-instagram"></i></a>
+		  </div>
+		  <!-----end Social Icon-->
+
+		<div class="copyright">
+			&copy; Copyright All Rights Reserved
+		</div>
+		<div class="credits">
+			Designed by Abi Computers</a>
+		</div>
+	</div>
+</footer>
+<!-----end footer-->
+
+<!-----whatsapp icon-->
+<script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?41898';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"Abi Computers",
+      "brandSubTitle":"Computer Sales & Service",
+      "brandImg":"images/whatsapp/1.png",
+      "welcomeText":"Hi there!\nHow can I help you?",
+      "messageText":"Hello, I have a question about",
+      "backgroundColor":"#82c0b7",
+      "ctaText":"chat with us",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"919585738135"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
+
+
+<!-----end whatsapp icon-->
+</body>
+</html>
