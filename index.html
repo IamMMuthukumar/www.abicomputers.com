@@ -438,13 +438,12 @@ dot[counter-1].classList.add('active');
 		</div>
 		<div class="contact-col">
 			
-			<form action="https://api.web3forms.com/submit" method="POST">
-
+			<form id="contactForm" onsubmit="submitForm(event)">
 				<input type="hidden" name="access_key" value="57fa456a-8dd8-4298-a701-3625a4b5a7f6">
 				<input type="text" name="name" placeholder="Enter your name" class="contact-inputs" required>
 				<input type="email" name="email" placeholder="Enter email address" class="contact-inputs" required>
 				<input type="tel" name="phone" placeholder="Enter your phone no." class="contact-inputs" pattern="[0-9]{10}" required>
-				<textarea name="message" placeholder="Message" class="contact-inputs" required ></textarea>
+				<textarea name="message" placeholder="Message" class="contact-inputs" required></textarea>
 				<button type="submit" class="btn">Send Message</button>
 				<button type="reset" class="btn">Reset</button>
 			</form>
@@ -510,6 +509,39 @@ dot[counter-1].classList.add('active');
     };
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
+</script>
+<script>
+    function submitForm(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+
+        const form = event.target;
+
+        const formData = {
+            access_key: form.access_key.value,
+            name: form.name.value,
+            email: form.email.value,
+            phone: form.phone.value,
+            message: form.message.value
+        };
+
+        fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+        }).then(function(response) {
+            if (response.ok) {
+                // If submission is successful, reset the form
+                form.reset();
+				window.location.href = "https://web3forms.com/success"
+            } else {
+                alert("Form submission failed.");
+            }
+        }).catch(function(error) {
+            alert("There was an error submitting the form.");
+        });
+    }
 </script>
 
 
